@@ -48,7 +48,7 @@ get_header();
 			<?php get_template_part( 'template-parts/content-books' ); ?>
 
 			<!-- get music section -->
-			<?php get_template_part( 'template-parts/content-music' ); ?>
+			<!-- <?php get_template_part( 'template-parts/content-music' ); ?> -->
 
 			<!-- get form section -->
 			<?php get_template_part( 'template-parts/content-form' ); ?>

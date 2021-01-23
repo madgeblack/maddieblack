@@ -10,12 +10,12 @@
 get_header();
 ?>
 
-	<div id="primary" class=" maxwidth center content-area">
+	<div id="primary" class=" maxwidth ph5-l ph4 center content-area">
 		<main id="main" class="site">
 
 
 			<header class="page-header">
-				<h2 class="untitled f4 ttu pt7">Category: <?php single_cat_title(); ?></h2>
+				<h2 class="untitled f4 ttu pt7">ALL STORIES</h2>
 
 					<div class="section-divider flex">
 					<span class="divider"></span>
@@ -27,24 +27,16 @@ get_header();
 	<section class="allposts dib w-100 pt3">
 
 	<?php
-		// organise our options into a data object
-		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-		$args = array(
-		  'post_type' => 'post',
-		  'category_name' => 'photography',
-		  'posts_per_page' => 9,
-		  'paged' => $paged,
-		  'orderby' => 'asc',
-		);
-		$cat_query = new WP_Query($args);
+			while ( have_posts() ) :
+				the_post();
+				get_template_part( 'template-parts/content', get_post_type( 'post' ) );
 
-	   while($cat_query->have_posts()) :
-	      $cat_query->the_post();
-	?>
+			endwhile; the_posts_navigation();
 
+		else : get_template_part( 'template-parts/content', 'none' );
+		endif;
+		?>
 
-			<!-- code as we’re used to already! -->
-			<!-- giving the outer div an aspect ratio -->
 			<article class="dib">
 				<a href="<?php the_permalink(); ?>" class="ph2 ph0-ns link">
 						<div class="aspect-ratio aspect-ratio--4x3 mb3">
@@ -89,7 +81,8 @@ get_header();
 <?php
 // get_sidebar();
 get_footer();
-?>	
+?>
+			
 
 	</div>
 

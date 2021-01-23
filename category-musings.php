@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class=" maxwidth ph5-l ph4 center content-area">
+	<div id="primary" class=" maxwidth center content-area">
 		<main id="main" class="site">
 
 

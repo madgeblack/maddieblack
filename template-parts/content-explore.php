@@ -18,7 +18,7 @@
 		?>
 			</div>
 
-			<DIV class="flex flex-wrap ph3-l ph0 mb4">
+			<DIV class="flex flex-wrap ph3-l ph0 pb4">
 				
 				<div class="explore-half w-50 mt1">
 

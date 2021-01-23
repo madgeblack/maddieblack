@@ -1,4 +1,4 @@
-<div class="latest maxwidth ph5-l ph4 pb4 center">
+<div class="latest maxwidth pb3 center">
 
 	<div class="section-divider flex flex-wrap items-end pv4">
 		<h4 class="section-title f7 ttu b">The Latest</h4>
@@ -6,6 +6,18 @@
 	</div>
 
 	<div class="slider-container flex flex-wrap">
+
+	<?php
+		// organise our options into a data object
+		$args = array(
+		  'posts_per_page' => 1,
+		  'orderby' => 'desc',
+		  'post_status' => 'publish',
+		);
+		// a variable with our query and options
+		$query = new WP_Query( $args );
+		// do a loop with our new query code 
+		if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
 
 			<a class="hero-image w-50-l w-100" href="<?php the_permalink(); ?>">
 				<div class="slider-image-container h-100 pt4 bg-center cover" style="<?php nice_background('hero_image'); ?>">
@@ -45,6 +57,9 @@
 		</div>
 
 </div>
+
+
+<?php endwhile; endif; ?>
 
 		
 </div>

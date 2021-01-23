@@ -1,4 +1,4 @@
-<div class="books-section center maxwidth ph5-l ph4">
+<div class="books-section center maxwidth">
 
 	<div class="section-divider flex flex-wrap items-end">
 			<h4 class="section-title f7 ttu b">On the shelf</h4>
@@ -14,7 +14,7 @@
 		$args = array(
 		  'posts_per_page' => 6,
 		  'post_type' => array('bookshelf'),
-		  'orderby' => 'rand',
+		  'orderby' => 'asc',
 		);
 		// a variable with our query and options
 		$query = new WP_Query( $args );

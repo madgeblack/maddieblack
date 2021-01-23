@@ -1,4 +1,4 @@
-<div class="maps-section center maxwidth ph5-l ph4 pt5">
+<div class="maps-section center maxwidth">
 
 	<div class="section-divider flex flex-wrap items-end">
 		<h4 class="section-title f7 ttu b">Map it out</h4>
@@ -32,8 +32,9 @@
 
 
 							<a href="<?php the_field('hyperlink', $post_object->ID); ?>" class="map-link link dib" target="_blank">
-								<p class="dib untitled f-subheadline-l f1 ttu tc pr4"><?php the_title(); ?> &</p>
-							</a>
+								<p class="dib untitled f-subheadline-l f1 ttu tc pr3"><?php the_title(); ?></a></p>
+								
+							
 
 
 						<?php endif; ?>
@@ -64,8 +65,8 @@
 
 
 							<a href="<?php the_field('hyperlink', $post_object->ID); ?>" class="map-link link dib" target="_blank">
-								<p class="dib untitled f-subheadline-l f1 ttu tc pr4"><?php the_title(); ?></p>
-							</a>
+								<p class="dib untitled f-subheadline-l f1 ttu tc pr3"><?php the_title(); ?></a></p>
+							
 
 
 						<?php endif; ?>

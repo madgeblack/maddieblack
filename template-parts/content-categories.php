@@ -1,4 +1,4 @@
-<div class="categories-section center maxwidth ph5-l ph4">
+<div class="categories-section center maxwidth">
 		
 	<div class="section-divider flex">
 		<span class="divider"></span>

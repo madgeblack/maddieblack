@@ -12,20 +12,15 @@
 		
 		<p class="f3 lh-copy mb2-l mb0 untitled pt0-l">
 		<?php the_sub_field('long_description'); ?>
+		</p>	
+
+		<p class="f7 ttu untitled pt2 b">
+		<?php the_sub_field('collaborators'); ?>
 		</p>
-
-		<!-- call up the author name field -->
-		<?php
-
-		$post_object = get_field('project_type');
-
-		if( $post_object ): ?>	
 
 		<p class="f7 ttu untitled pt2 b">
 		<?php the_sub_field('project_type'); ?>
 		</p>
-
-	<?php endif; ?>
 
 	</div>
 

@@ -33,13 +33,9 @@
 				</a>
 
 					<div class="name absolute">
-						<nav class="side-menu dib absolute ttu b">
-							<?php
-							wp_nav_menu( array(
-							'theme_location' => 'side-menu'
-							) );
-							?>
-						</nav>
+						<p class="side-menu dib absolute ttu b">
+							Maddie Black
+						</p>
 					</div>
 
 				<nav id="site-navigation" class="main-navigation dib absolute ttu b">

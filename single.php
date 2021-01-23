@@ -9,7 +9,6 @@
 ?> 
 
 <div class="progress"></div>
-<!-- <div class="progress" style="<?php // progressbar_color(); ?>"></div> -->
 
 <?php
 get_header();

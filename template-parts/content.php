@@ -51,8 +51,7 @@
 		<!-- Scroll to Top Button -->
 		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="<?php bloginfo('template_directory');?>/images/uparrow.png"></button> -->
 
-		<!-- <script> -->
-<!-- 			//Get the button:
+		<!-- <script>
 			mybutton = document.getElementById("myBtn");
 
 			// When the user scrolls down 20px from the top of the document, show the button
@@ -71,9 +70,9 @@
 			function topFunction() {
 			  document.body.scrollTop = 0; // For Safari
 			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			}	 -->
+			}	
 
-		<!-- </script> -->
+		</script> -->
 </div><!-- .entry-content -->
 
 	<footer class="entry-footer">

@@ -6,7 +6,11 @@
  *
  * @package maddieblack
  */
+?>
 
+<div class="progress"></div>
+
+<?php
 get_header();
 ?>
 
